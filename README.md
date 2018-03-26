@@ -2,9 +2,9 @@
 
 ## If you use Vagrant
 
-This is my Vagrant file, it uses the gbarbieru / xenial virtual machine
-
-`boxes = [
+This is my Vagrant file, it uses the gbarbieru / xenial virtual machine.
+```
+boxes = [
     {
         :name => "develop",
         :eth1 => "192.168.118.30",
@@ -40,4 +40,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.provision :shell, path: "setup.sh"
     end
   end
-end`
+end
+```
